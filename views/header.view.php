@@ -19,23 +19,31 @@
 
 		<!-- Header -->
 			<header id="header">
-				<h1><a href="index.html">Retrospect</a></h1>
+				<h1><a href="<?php echo RUTA; ?>">Retrospect</a></h1>
 				<a href="#nav">Menu</a>
 			</header>
 
 		<!-- Nav -->
 			<nav id="nav">
 				<ul class="links">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="generic.html">Generic</a></li>
-					<li><a href="elements.html">Elements</a></li>
-					<li><form style="width: 100%; display: flex; justify-content: space-between;" action="<?php echo RUTA; ?>/buscar.php" method="get" name="searcher">
+					<li><a href="<?php echo RUTA; ?>">Home</a></li>
+					<li><a href="<?php echo RUTA; ?>">Generic</a></li>
+					<li><a href="<?php echo RUTA; ?>">Elements</a></li>
+					<li><form style="width: 100%; display: flex; justify-content: space-between;" action="<?php echo RUTA; ?>/search.php" method="GET" name="searcher">
 						<div style="width: 100%">
 							<input type="text" name="search" placeholder="Buscar...">
 						</div>
 						<div>
-							<button style="line-height: 56px;height: auto;min-width: 0;font-size: 19px;padding: 3px 0;margin-left: -27px;background: none; outline:0;" type="submit" class="icon fa-search"></button>
+							<button style="line-height: 46px;height: auto;min-width: 0;font-size: 19px;padding: 3px 0;margin-left: -27px;background: none; outline:0;" type="submit" class="icon fa-search"></button>
 						</div>
 					</form></li>
+					<li>
+						<ul class="icons" style="text-align: center;">
+							<li><a href="https://twitter.com/mayconxhh" class="icon fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/100010447684105" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/mayconxhh/" class="icon fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/mayconxhh" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
+						</ul>
+					</li>
 				</ul>
 			</nav>

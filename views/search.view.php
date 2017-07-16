@@ -1,7 +1,7 @@
 <!-- One -->
 	<section id="one" class="wrapper style1">
 		<div class="inner">
-			<?php foreach($posts as $post) : ?>
+			<?php foreach($results as $post) : ?>
 				<article class="feature left">
 					<span class="image"><img src="<?php echo RUTA; ?>/images/<?php echo $post['thumb']; ?>" alt="" /></span>
 					<div class="content">

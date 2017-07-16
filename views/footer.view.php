@@ -2,17 +2,17 @@
 		<footer id="footer">
 			<div class="inner">
 				<ul class="icons">
-					<li><a href="#" class="icon fa-facebook">
+					<li><a href="https://www.facebook.com/100010447684105" class="icon fa-facebook" target="_blank">
 						<span class="label">Facebook</span>
 					</a></li>
-					<li><a href="#" class="icon fa-twitter">
+					<li><a href="https://twitter.com/mayconxhh" class="icon fa-twitter" target="_blank">
 						<span class="label">Twitter</span>
 					</a></li>
-					<li><a href="#" class="icon fa-instagram">
+					<li><a href="https://www.instagram.com/mayconxhh/" class="icon fa-instagram" target="_blank">
 						<span class="label">Instagram</span>
 					</a></li>
-					<li><a href="#" class="icon fa-linkedin">
-						<span class="label">LinkedIn</span>
+					<li><a href="https://github.com/mayconxhh" class="icon fa-github" target="_blank">
+						<span class="label">Github</span>
 					</a></li>
 				</ul>
 				<ul class="copyright">

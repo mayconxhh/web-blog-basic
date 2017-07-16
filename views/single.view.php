@@ -3,14 +3,26 @@
 		<div class="container">
 
 			<header class="major special">
-				<h2>Generic</h2>
-				<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+				<h2><?php echo $post['title']; ?></h2>
+				<p><?php echo $post['extract']; ?></p>
 			</header>
 
-			<a href="#" class="image fit"><img src="images/pic11.jpg" alt="" /></a>
-			<p>Vis accumsan feugiat adipiscing nisl amet adipiscing accumsan blandit accumsan sapien blandit ac amet faucibus aliquet placerat commodo. Interdum ante aliquet commodo accumsan vis phasellus adipiscing. Ornare a in lacinia. Vestibulum accumsan ac metus massa tempor. Accumsan in lacinia ornare massa amet. Ac interdum ac non praesent. Cubilia lacinia interdum massa faucibus blandit nullam. Accumsan phasellus nunc integer. Accumsan euismod nunc adipiscing lacinia erat ut sit. Arcu amet. Id massa aliquet arcu accumsan lorem amet accumsan.</p>
-			<p>Amet nibh adipiscing adipiscing. Commodo ante vis placerat interdum massa massa primis. Tempus condimentum tempus non ac varius cubilia adipiscing placerat lorem turpis at. Aliquet lorem porttitor interdum. Amet lacus. Aliquam lobortis faucibus blandit ac phasellus. In amet magna non interdum volutpat porttitor metus a ante ac neque. Nisi turpis. Commodo col. Interdum adipiscing mollis ut aliquam id ante adipiscing commodo integer arcu amet Ac interdum ac non praesent. Cubilia lacinia interdum massa faucibus blandit nullam. Accumsan phasellus nunc integer. Accumsan euismod nunc adipiscing lacinia erat ut sit. Arcu amet. Id massa aliquet arcu accumsan lorem amet accumsan commodo odio cubilia ac eu interdum placerat placerat arcu commodo lobortis adipiscing semper ornare pellentesque.</p>
-			<p>Amet nibh adipiscing adipiscing. Commodo ante vis placerat interdum massa massa primis. Tempus condimentum tempus non ac varius cubilia adipiscing placerat lorem turpis at. Aliquet lorem porttitor interdum. Amet lacus. Aliquam lobortis faucibus blandit ac phasellus. In amet magna non interdum volutpat porttitor metus a ante ac neque. Nisi turpis. Commodo col. Interdum adipiscing mollis ut aliquam id ante adipiscing commodo integer arcu amet blandit adipiscing arcu ante.</p>
+			<a href="#" class="image fit"><img src="images/<?php echo $post['thumb']; ?>" alt="" /></a>
+			<p><?php echo $post['text']; ?></p>
 
+			<i><?php echo datePost($post['date']); ?></i>
+
+			<hr>
+
+			<div style="width: 80%; margin: 0 auto; text-align: center; border: 2px solid #51BAA4; border-radius: 10px; padding: 1.3em;margin-bottom: 1em;">
+				<figure style="width: auto; line-height: 0; margin-bottom: 10px;">
+					<img style="width: 100px; border-radius: 50%" src="images/user.jpg" alt="">
+				</figure>
+				<div style="padding-left: 1.3em; text-align: center;">
+					<strong><a href="" style="font-size: 1.3em;">Author: Maycon X. Huayapa H.</a></strong>
+					<br>
+					<i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit labore iusto, pariatur corrupti. Quidem, eum aperiam reiciendis, voluptatibus optio molestiae accusamus a ducimus officia illo suscipit saepe libero asperiores illum?</i>
+				</div>
+			</div>
 		</div>
 	</section>
