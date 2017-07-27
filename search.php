@@ -16,7 +16,7 @@
 		$results = $stament->fetchAll();
 
 		if (empty($results)) {
-			$title = 'No se encontraron posts con el resultado:' .$search;
+			$title = 'No se encontraron posts con el resultado: ' .$search;
 		} else {
 			$title = 'Resultados de la busqueda: ' .$search;
 		}

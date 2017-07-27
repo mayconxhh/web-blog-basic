@@ -1,4 +1,10 @@
-<!-- One -->
+<!-- Header	 -->
+<?php require 'header.view.php'; ?>
+	
+	<!-- Banner -->
+	<?php require 'banner.view.php'; ?>
+
+	<!-- One -->
 	<section id="one" class="wrapper style1">
 		<div class="inner">
 			<?php foreach($posts as $post) : ?>
@@ -9,7 +15,7 @@
 						<p><?php echo $post['extract'] ?></p>
 						<ul class="actions">
 							<li>
-								<a href="post.php?id=<?php echo $post['id'] ?>" class="button alt">More</a>
+								<a href="post.php?id=<?php echo $post['id'] ?>" class="button alt"><i class="fa fa-chevron-right" aria-hidden="true" style="margin-right: 5px"></i> Ver</a>
 							</li>
 						</ul>
 					</div>
@@ -17,3 +23,9 @@
 		<?php endforeach; ?>
 		</div>
 	</section>
+
+	<!-- Pagination -->
+	<?php require 'pagination.view.php'; ?>
+
+<!-- Footer -->
+<?php require 'footer.view.php'; ?>

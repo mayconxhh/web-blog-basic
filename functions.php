@@ -21,15 +21,27 @@
 
 	// Get current page
 	function current_page(){
-		return isset($_GET['p']) ? (int)$_GET['p'] : 1;
+		if (isset($_GET['p'])) {
+			if ((int)$_GET['p'] !== 0) {
+				return (int)$_GET['p'];
+			} else {
+				return false;
+			}
+		} else {
+			return 1;
+		}
 	}
 
 	// Get posts of the database
 	function getPosts($post_for_page, $conection){
-		$start = (current_page() > 1) ? current_page() * $post_for_page - $post_for_page : 0;
-		$sentence = $conection->prepare("SELECT SQL_CALC_FOUND_ROWS * FROM posts LIMIT $start, $post_for_page");
-		$sentence->execute();
-		return $sentence->fetchAll();
+		if (current_page() === false) {
+			return false;
+		} else {
+			$start = (current_page() > 1) ? current_page() * $post_for_page - $post_for_page : 0;
+			$sentence = $conection->prepare("SELECT SQL_CALC_FOUND_ROWS * FROM posts LIMIT $start, $post_for_page");
+			$sentence->execute();
+			return $sentence->fetchAll();
+		}
 	}
 
 	function number_pages($post_for_page, $conection){
@@ -64,6 +76,13 @@
 
 		$date = "$day de ".$months[$month]." del $year";
 		return $date;
+	}
+
+	// Check session
+	function checkSession(){
+		if (!isset($_SESSION['admin'])) {
+			header('Location: '.RUTA);
+		}
 	}
 
  ?>

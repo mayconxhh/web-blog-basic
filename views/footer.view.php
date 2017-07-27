@@ -24,11 +24,11 @@
 		</footer>
 
 	<!-- Scripts -->
-		<script src="./js/jquery.min.js"></script>
-		<script src="./js/skel.min.js"></script>
-		<script src="./js/util.js"></script>
-		<!--[if lte IE 8]><script src="./js/ie/respond.min.js"></script><![endif]-->
-		<script src="./js/main.js"></script>
+		<script src="<?php echo RUTA; ?>/js/jquery.min.js"></script>
+		<script src="<?php echo RUTA; ?>/js/skel.min.js"></script>
+		<script src="<?php echo RUTA; ?>/js/util.js"></script>
+		<!--[if lte IE 8]><script src="<?php echo RUTA; ?>/js/ie/respond.min.js"></script><![endif]-->
+		<script src="<?php echo RUTA; ?>/js/main.js"></script>
 
 	</body>
 </html>
